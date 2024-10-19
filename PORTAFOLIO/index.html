@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <header>
+        <nav id="nav">
+            <ul class="nav-list">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Inicio -->
+    <main>
+        <section id="home">
+            <h1>Bienvenido a Mi Portafolio</h1>
+            <p>Soy Alexander Yuqui, un desarrollador web apasionado por la tecnologia.</p>
+        </section>
+
+        <!-- Sobre mí -->
+        <section id="about">
+            <h2>Sobre mí</h2>
+            <img src="imgcarnet.jpeg" alt="" class="img-small">
+            <p>Soy estudiante de Ingeniería en Software con mucho interés en el desarrollo de soluciones tecnológicas. A lo largo de mi carrera, he aprendido sobre diseño, desarrollo y mantenimiento de aplicaciones, tanto en la parte de frontend como backend, usando lenguajes como HTML, CSS, JavaScript y Python, además de frameworks como React y Node.js. Me gusta trabajar en proyectos que sean eficientes y fáciles de escalar, y siempre trato de aprender sobre nuevas tecnologías y mejorar mis habilidades.
+
+                Mi objetivo es participar en proyectos que me desafíen y donde pueda aplicar lo que sé, mientras aprendo de mis compañeros y contribuyo a resolver problemas reales. Estoy buscando oportunidades para seguir creciendo como desarrollador y aportar valor en el mundo laboral..</p>
+        </section>
+
+        <!-- Proyectos -->
+        <section id="projects">
+            <h2>Proyectos</h2>
+            <ul>
+                <li><a href="https://www.velneo.com/blog/convertirse-desarrollar-software-completo">Proyecto 1</a></li>
+                <li><a href="https://guayahack.co/wiki/tutorial-intro-usar-vscode/">Proyecto 2</a></li>
+            </ul>
+        </section>
+
+        <!-- Habilidades -->
+        <section id="skills">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Manipulacion de hardware</li>
+                <li>manipulacion de software</li>
+                
+            </ul>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form id="contact-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Alexander Yuqui. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

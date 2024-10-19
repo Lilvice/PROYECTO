@@ -1,0 +1,73 @@
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    /* Configuración de la imagen de fondo */
+    background-image: url(fondo_web-desarrollo-software.jpg);
+    background-position: center;
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* La imagen se escala para cubrir toda la pantalla */
+}
+
+.img-small {
+    width: 150px; /* Ajusta el ancho a lo que desees */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 50%; /* Esto es opcional, si quieres una imagen redonda */
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #333;
+    color:white;
+    
+    
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin: 0 10px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilo del botón de hamburguesa */
+.hamburger {
+    display: none;
+}
+
+/* Estilo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+        background-color: white;
+    }
+}
